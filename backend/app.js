@@ -10,8 +10,8 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 
 const razorpay = new Razorpay({
-	key_id: 'rzp_test_EOBUXhgUFzEzhu',
-	key_secret: 'pxU76GPMHWbRup5D9Nf40rN3'
+	key_id: process.env.KEY_ID,
+	key_secret: process.env.KEY_SECRET
 })
 
 
